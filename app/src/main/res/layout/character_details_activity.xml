@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sw_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/titleTopGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/titleBotGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <TextView
+        android:id="@+id/tvPeopleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/titleTopGuideline"
+        app:layout_constraintBottom_toBottomOf="@id/titleBotGuideline"
+        style="@style/TitleTextTheme" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleBotGuideline"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvTitleHeight"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="@string/characterHeight"
+                android:gravity="left|center_vertical"
+                style="@style/RecyclerItemTextTheme"
+
+                />
+
+            <TextView
+                android:id="@+id/tvTitleMass"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="@string/characterMass"
+                android:gravity="left|center_vertical"
+                style="@style/RecyclerItemTextTheme"
+                android:layout_below="@id/tvTitleHeight" />
+
+            <TextView
+                android:id="@+id/tvTitleHairColor"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="@string/characterHairColor"
+                android:gravity="left|center_vertical"
+                style="@style/RecyclerItemTextTheme"
+                android:layout_below="@id/tvTitleMass"
+
+                />
+
+            <TextView
+                android:id="@+id/tvTitleSkinColor"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="@string/characterSkinColor"
+                android:gravity="left|center_vertical"
+                style="@style/RecyclerItemTextTheme"
+                android:layout_below="@id/tvTitleHairColor" />
+
+            <TextView
+                android:id="@+id/tvTitleEyeColor"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="@string/characterEyeColor"
+                android:gravity="left|center_vertical"
+                style="@style/RecyclerItemTextTheme"
+                android:layout_below="@id/tvTitleSkinColor" />
+
+            <TextView
+                android:id="@+id/tvTitleBirthYear"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="@string/characterBirthYear"
+                android:gravity="left|center_vertical"
+                style="@style/RecyclerItemTextTheme"
+                android:layout_below="@id/tvTitleEyeColor"
+
+                />
+
+            <TextView
+                android:id="@+id/tvTitleGender"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="@string/characterGender"
+                android:gravity="left|center_vertical"
+                style="@style/RecyclerItemTextTheme"
+                android:layout_below="@id/tvTitleBirthYear" />
+
+            <TextView
+                android:id="@+id/tvTitleFilms"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="@string/characterFilmsPlayed"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                style="@style/RecyclerItemTextTheme"
+                android:layout_below="@id/tvTitleGender" />
+
+            <TextView
+                android:id="@+id/tvHeight"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                style="@style/RecyclerItemTextTheme"
+                android:layout_toEndOf="@id/tvTitleHeight" />
+
+            <TextView
+                android:id="@+id/tvMass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                style="@style/RecyclerItemTextTheme"
+                android:layout_below="@id/tvHeight"
+                android:layout_toEndOf="@id/tvTitleMass" />
+
+            <TextView
+                android:id="@+id/tvHairColor"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                style="@style/RecyclerItemTextTheme"
+                android:layout_below="@id/tvMass"
+                android:layout_toEndOf="@id/tvTitleHairColor" />
+
+            <TextView
+                android:id="@+id/tvSkinColor"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                style="@style/RecyclerItemTextTheme"
+                android:layout_below="@id/tvHairColor"
+                android:layout_toEndOf="@id/tvTitleSkinColor" />
+
+            <TextView
+                android:id="@+id/tvEyeColor"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                style="@style/RecyclerItemTextTheme"
+                android:layout_below="@id/tvSkinColor"
+                android:layout_toEndOf="@id/tvTitleEyeColor" />
+
+            <TextView
+                android:id="@+id/tvBirthYear"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                style="@style/RecyclerItemTextTheme"
+                android:layout_below="@id/tvEyeColor"
+                android:layout_toEndOf="@id/tvTitleBirthYear" />
+
+            <TextView
+                android:id="@+id/tvGender"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                style="@style/RecyclerItemTextTheme"
+                android:layout_below="@id/tvBirthYear"
+                android:layout_toEndOf="@id/tvTitleGender" />
+
+            <TextView
+                android:id="@+id/tvFilms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                style="@style/RecyclerItemTextTheme"
+                android:layout_below="@id/tvTitleFilms" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

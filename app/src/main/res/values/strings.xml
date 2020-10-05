@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Star Wars App</string>
+    <string name="FetchDataProgressDialogTitle">Loading data</string>
+    <string name="PleaseWaitDialogMessage">Please wait while downloading data!</string>
+    <string name="PeopleActivityTitle">Star Wars Characters</string>
+    <string name="characterName">Name</string>
+    <string name="characterHeight">Height:</string>
+    <string name="characterMass">Mass:</string>
+    <string name="characterHairColor">Hair color:</string>
+    <string name="characterSkinColor">Skin color:</string>
+    <string name="characterEyeColor">Eye color:</string>
+    <string name="characterBirthYear">Birth year:</string>
+    <string name="characterGender">Gender:</string>
+    <string name="characterFilmsPlayed">Films</string>
+</resources>
